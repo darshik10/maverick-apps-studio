@@ -1,0 +1,1512 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+    --primary-color: #97AED3;
+    --secondary-color: #77767D;
+    --white-color: #ffffff;
+    --bg-color: #050B22;
+    --section-bg-color: #1C1E32;
+    --footer-link-color: #DFDFDF;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+}
+.container {
+    max-width: 1400px !important;
+}
+.align-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+}
+.common-padding-div {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.common-para {
+    color: var(--secondary-color);
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.common-btn-div .btn {
+    background-color: #31528D;
+    color: var(--white-color);
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 12px 40px;
+    border: 2px solid #31528D;
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: relative;
+    text-transform: capitalize;
+    -webkit-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+    min-width: 200px;
+}
+.common-btn-div {
+    margin-top: 20px;
+}
+.common-btn-div .btn:hover {
+    -webkit-transform: translateY(-8px);
+        -ms-transform: translateY(-8px);
+            transform: translateY(-8px);
+}
+.section-title h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 32px;
+    color: var(--primary-color);
+}
+.common-heading-text h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.common-heading-text h6 {
+    color: var(--secondary-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 2.5px;
+}
+.common-heading-text {
+    position: relative;
+}
+.divider-main-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.divider1 , .divider2 {
+    width: 80px;
+    height: 1px;
+    background-color: var(--primary-color);
+    display: block;
+    margin: 0 10px;
+}
+.dividericon {
+    color: var(--primary-color);
+    display: block;
+}
+.common-highlight-text {
+    color: var(--secondary-color);
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+}
+/*========================= Navbar css start =========================*/
+.header-main-div {
+    background-color: var(--common-bg);
+    -webkit-transition: all 0.5s ease;
+  -o-transition: position 10s;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.sticky-header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9999;
+    background-color: var(--section-bg-color);
+    -webkit-box-shadow: 0 3px 6px rgb(0 0 0 / 10%), 0 3px 6px rgb(0 0 0 / 9%);
+            box-shadow: 0 3px 6px rgb(0 0 0 / 10%), 0 3px 6px rgb(0 0 0 / 9%);
+    -webkit-animation: smoothScroll 1s forwards;
+            animation: smoothScroll 1s forwards;
+}
+.sticky-header .navbar {
+    padding: 12px 0px !important;
+}
+.header-logo-div img{
+    max-width: 60px;
+}
+.header-main-div .navbar {
+    padding: 10px 0px;
+}
+nav .navbar-nav .nav-item {
+    margin-left: 25px;
+}
+nav .navbar-nav .nav-item .nav-link {
+    color: var(--white-color);
+    font-weight: 400;
+    padding: 0px;
+    font-size: 16px;
+}
+.header-dropdown-div .dropdown-menu {
+    background-color: #ffffff;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-color: #e2e2e2!important;
+    border-radius: 0px;
+    margin-top: 0px;
+}
+.header-dropdown-div .dropdown-menu .dropdown-item {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.header-dropdown-div .dropdown-menu .dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.header-dropdown-div .dropdown-menu .dropdown-item:last-child {
+    border-bottom: 0px;
+}
+@media only screen and (min-width: 991px) {
+    .navbar .dropdown .dropdown-menu:hover, .navbar .dropdown:hover .dropdown-menu {
+        display: inherit;
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: visibility 0s,opacity .3s linear;
+        -o-transition: visibility 0s,opacity .3s linear;
+        transition: visibility 0s,opacity .3s linear;
+    }
+  }
+/*========================= Navbar css end =========================*/
+
+/*========================= Home Banner css start =========================*/
+.user-details-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    position: relative;
+    background-color: var(--common-bg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.app-contains .small-heading {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+.app-contains .main-heading {
+    font-size: 65px;
+    font-weight: 600;
+    margin-bottom: 36px;
+    color: var(--primary-color);
+}
+.app-contains .common-para {
+
+}
+.appstore-btn-div {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.appstore-btn-div img {
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+/*========================= Home Banner css end =========================*/
+
+/*======================== policy & terms&conditions css start ========================*/
+.inner-banner-div {
+    background-color: var(--section-bg-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.inner-heading-title {
+    text-align: center;
+    color: var(--white-color);
+}
+.common-ul-li-div ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.common-ul-li-div ul li {
+    margin-bottom: 10px;
+    position: relative;
+    text-decoration: none;
+    color: var(--gray-color);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-left: 22px;
+    color: var(--secondary-color);
+}
+.common-ul-li-div ul li:before {
+    font-family: FontAwesome;
+    content: "\f10c";
+    display: inline-block;
+    padding-right: 0;
+    vertical-align: middle;
+    font-weight: 100;
+    color: var(--primarycolor);
+    position: absolute;
+    left: 0;
+    top: 0px;
+    font-size: 12px;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+}
+.common-ul-li-div ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+.common-ul-li-div ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.small-heading-text {
+    color: var(--white-color);
+    margin-bottom: 15px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.small-heading-para-text {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-top: 15px;
+}
+.common-para a {
+    word-wrap: break-word;
+    color: var(--primary-color);
+}
+/*======================== policy & terms&conditions css end ========================*/
+
+/*========================= Footer css start =========================*/
+
+footer {
+    background-color: var(--section-bg-color);
+}
+.footer-about-div {
+    padding-right: 10%;
+}
+.quick-link-list-div h3 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: var(--white-color);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 45px;
+}
+.quick-link-list-div .common-para {
+    color: var(--footer-link-color);
+    font-weight: 300;
+}
+.footer-social-div {
+    margin-top: 50px;
+}
+.footer-social-div a {
+    text-decoration: none!important;
+}
+.footer-social-div a i {
+    margin-right: 15px;
+    color: var(--white-color);
+    font-size: 18px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+.quick-link-list-div ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.quick-link-list-div ul li {
+    margin-bottom: 15px;
+    position: relative;
+}
+.quick-link-list-div ul li a {
+    text-decoration: none;
+    color: var(--footer-link-color);
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 0;
+    letter-spacing: .5px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+.footer-products-space {
+    padding-left: 10%;
+}
+.footer-logo {
+    margin-bottom: 30px;
+}
+.quick-link-list-div1 ul li:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 0;
+    vertical-align: middle;
+    font-weight: 100;
+    color: var(--footer-link-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+    font-size: 18px;
+}
+.quick-link-list-div1 ul .footeremailicon:before {
+    content: "\f0e0";
+}
+.quick-link-list-div1 ul .footercallicon:before {
+    content: "\f095";
+}
+.quick-link-list-div1 ul li {
+    padding-left: 30px!important;
+}
+.footer-social-div img {
+    margin-right: 20px;
+}
+.copy-right-footer {
+    background-color: var(--primary-color);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.copy-right-sub-footer p {
+    text-align: center;
+    margin-bottom: 0px;
+    color: #000000;
+    font-size: 16px;
+}
+.newsletter-div {
+    margin-top: 27px;
+}
+.newsletter-field-div input  {
+    border-radius: 50px !important;
+    border: 2px solid var(--primary-color);
+    background: rgba(217, 217, 217, 0.15);
+    height: 50px;
+    padding-left: 20px;
+    color: var(--footer-link-color) !important;
+    padding-right: 90px;
+    font-size: 14px;
+    -webkit-box-shadow: unset !important;
+            box-shadow: unset !important;
+    outline: unset !important;
+}
+.newsletter-field-div input:focus {
+    background: rgba(217, 217, 217, 0.15);
+}
+.newsletter-field-div input::-webkit-input-placeholder {
+    color: var(--footer-link-color);
+    font-size: 14px;
+}
+.newsletter-field-div input::-moz-placeholder {
+    color: var(--footer-link-color);
+    font-size: 14px;
+}
+.newsletter-field-div input:-ms-input-placeholder {
+    color: var(--footer-link-color);
+    font-size: 14px;
+}
+.newsletter-field-div input::-ms-input-placeholder {
+    color: var(--footer-link-color);
+    font-size: 14px;
+}
+.newsletter-field-div input::placeholder {
+    color: var(--footer-link-color);
+    font-size: 14px;
+}
+.newsletter-field-div .input-group-text {
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    border-radius: 50px !important;
+    border: 2px solid var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    -webkit-transform: translate(-6px,-50%);
+        -ms-transform: translate(-6px,-50%);
+            transform: translate(-6px,-50%);
+    z-index: 999;
+    min-width: 75px;
+    text-align: center;
+    display: block;
+}
+.newsletter-div h3 {
+    margin-bottom: 18px;
+}
+/*========================= Footer css end =========================*/
+
+/*========================= Contact us css start =========================*/
+/* .contact-us-sec-main-div {
+    background-color: var(--section-bg-color);
+} */
+.contact-form-div {
+    margin-top: 40px;
+}
+.contact-field-div {
+    margin-bottom: 20px;
+}
+.contact-field-div input {
+    height: 63px;
+    background-color: var(--section-bg-color);
+    -webkit-box-shadow: unset !important;
+            box-shadow: unset !important;
+    outline: unset !important;
+    color: var(--secondary-color);
+    border-color: var(--bg-color);
+    border-radius: 8px;
+}
+.contact-field-div input::-webkit-input-placeholder, .contact-field-div textarea::-webkit-input-placeholder {
+    color: var(--secondary-color);
+}
+.contact-field-div input::-moz-placeholder, .contact-field-div textarea::-moz-placeholder {
+    color: var(--secondary-color);
+}
+.contact-field-div input:-ms-input-placeholder, .contact-field-div textarea:-ms-input-placeholder {
+    color: var(--secondary-color);
+}
+.contact-field-div input::-ms-input-placeholder, .contact-field-div textarea::-ms-input-placeholder {
+    color: var(--secondary-color);
+}
+.contact-field-div input::placeholder , .contact-field-div textarea::placeholder {
+    color: var(--secondary-color);
+}
+.contact-field-div input:focus , .contact-field-div textarea:focus {
+    background-color: var(--bg-color) !important;
+}
+.contact-field-div textarea {
+    background-color: var(--section-bg-color);
+    -webkit-box-shadow: unset !important;
+            box-shadow: unset !important;
+    outline: unset !important;
+    color: var(--secondary-color);
+    border-color: var(--bg-color);
+    padding-top: 15px;
+    border-radius: 8px;
+}
+.contact-us-sec-main-div {
+    position: relative;
+}
+.contact-round-img {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.contact-div {
+    position: relative;
+    z-index: 99;
+}
+.contact-us-img-div img {
+    animation: mover 1s infinite alternate;
+}
+/*========================= Contact us css end =========================*/
+
+/*========================= about us css start =========================*/
+.about-us-sec-div {
+    background-color: var(--section-bg-color);
+    position: relative;
+}
+.about-us-div {
+    margin-top: 35px;
+}
+.about-us-contain-div h4 {
+    color: var(--white-color);
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.about-us-left-img {
+    text-align: left;
+}
+.about-us-right-img {
+    text-align: right;
+}
+
+.about-us-left-round {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.about-us-right-round {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.features-points-div {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.features-box-div {
+    background: -o-linear-gradient(top, #1C1E32 0%, rgba(95, 108, 137, 0.23) 54.17%, rgba(151, 174, 211, 0) 100%);
+    background: linear-gradient(180deg, #1C1E32 0%, rgba(95, 108, 137, 0.23) 54.17%, rgba(151, 174, 211, 0) 100%);
+    padding: 10px;
+    min-height: 234px;
+    width: 100%;
+    max-width: 190px;
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-clip-path: polygon(0 0, 52% 9%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+                    clip-path: polygon(0 0, 52% 9%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+}
+.features-box-div::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background: -o-radial-gradient(51.1% 50%, 52.76% 169167.19%, #3D5D96 0%, rgba(61, 93, 150, 0) 100%);
+    background: radial-gradient(52.76% 169167.19% at 51.1% 50%, #3D5D96 0%, rgba(61, 93, 150, 0) 100%);
+}
+.features-box-div h6 {
+    width: 100%;
+    color: var(--white-color);
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/*========================= about us css end =========================*/
+
+.application-snapshots-sec-div {
+    background-color: var(--section-bg-color);
+    position: relative;
+}
+
+.rotate-heading {
+    position: absolute;
+    left: -75px;
+    top: 45%;
+    z-index: 999;
+    transform: translate(-0%,-50%);
+    width: 100%;
+}
+.application-snapshots-sec-div .common-heading-text {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 0px;
+}
+
+.testimonial-box-div {
+    background-color: var(--section-bg-color);
+    border-radius: 32px;
+    display: flex !important;
+    padding: 40px !important;
+    margin: 0px 20px !important;
+}
+.user-icon-div {
+    margin-right: 32px;
+}
+.user-icon-div img {
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+}
+.our-client-slider-section {
+    margin-top: 50px;
+    position: relative;
+    z-index: 99;
+}
+.our-client-slider .slick-track {
+    display: flex !important;
+    /* column-gap: 40px !important; */
+}
+.user-feedback-div p {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.star-div {
+    margin-bottom: 15px;
+}
+.star-div i {
+    margin-right: 3px;
+    color: #FFC225;
+}
+.user-name {
+    font-size: 14px;
+    color: #757575;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+.client-say-sec-div .container {
+    position: relative;
+}
+.testimonial-round {
+    position: absolute;
+    right: -50px;
+    bottom: -230px;
+}
+/*========================= Application Snapshots css end =========================*/
+
+
+
+/* - Responsive CSS - */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        max-width: 540px !important;
+    }
+    .small-circle {
+        display: none;
+    }
+    .big-circle {
+        display: none;
+    }
+    .common-padding-div {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .small-text {
+        font-size: 18px;
+    }
+    .column-reverse-div {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    }
+   
+    .navbar-toggler .navbar-toggler-icon {
+    	display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+	    -webkit-box-align: center;
+	        -ms-flex-align: center;
+	            align-items: center;
+	    -webkit-box-pack: center;
+	        -ms-flex-pack: center;
+	            justify-content: center;
+    }
+    .navbar-collapse.show {
+    	background-color: var(--primary-color);
+    }
+    .sticky-header .navbar {
+        padding: 7px 0px !important;
+    }
+    nav .navbar-nav .nav-item {
+        margin-left: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top: 1px solid #2b2b2b;
+    }
+    nav .navbar-nav .nav-item .nav-link {
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+    .navbar-nav {
+        background-color: var(--section-bg-color)
+    }
+    .header-main-div .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header-main-div .header-logo-div {
+        padding-left: 15px;
+    }
+    .header-main-div .navbar-toggler {
+        margin-right: 15px;
+        padding: 3px 5px;
+        border-radius: 4px;
+        background-color: var(--primary-color);
+    }
+    .navbar-toggler-icon i {
+        color: var(--section-bg-color);
+    }
+    .header-logo-div img {
+        width: 45px;
+    }
+    .appstore-btn-div img {
+        max-width: 145px;
+        margin-right: 0px;
+    }
+    .appstore-btn-div {
+        margin-top: 25px;
+    }
+    .user-details-div {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .header-main-div .navbar {
+        padding: 15px 0px;
+    }
+    /*====================== Home Banner css start ======================*/
+    .app-contains .main-heading {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+    .app-contains .main-heading br {
+        display: none;
+    }
+    .app-contains .small-heading {
+        font-size: 35px;
+    }
+    .common-heading-text h2 {
+        font-size: 32px;
+    }
+    /*====================== Home Banner css end ======================*/
+
+    /*====================== Footer css start ======================*/
+    .footer-social-div {
+        margin-top: 30px;
+    }
+    .footer-social-div img {
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    .quick-link-list-div h3 {
+        margin-bottom: 20px;
+        font-size: 22px;
+        margin-top: 25px;
+    }
+    .footer-products-space {
+        padding-left: 0px;
+    }
+    .footer-about-div {
+        padding-right: 0px;
+    }
+    /*====================== Footer css end ======================*/
+    .contact-us-img-div {
+        margin-bottom: 30px;
+    }
+    .contact-field-div input {
+        height: 55px;
+    }
+    .common-btn-div .btn {
+        font-size: 15px;
+        padding: 10px 20px;
+        min-width: 170px;
+    }
+    .contact-round-img {
+        max-width: 150px;
+        display: none;
+    }
+    .about-us-right-round {
+        display: none;
+    }
+    .about-us-left-round {
+        display: none;
+    }
+    .common-para {
+        font-size: 16px;
+    }
+    .about-us-right-img , .about-us-left-img {
+        text-align: center;
+    }
+    .features-box-div {
+        max-width: 170px;
+    }
+    .features-points-div {
+        -webkit-column-gap: 15px;
+        -moz-column-gap: 15px;
+        column-gap: 15px;
+        row-gap: 30px;
+    }
+    .features-box-div h6 {
+        font-size: 16px;
+    }
+    .rotate-heading {
+        position: relative;
+        left: 0px;
+        transform: unset;
+        top: 0px;
+    }
+    .application-snapshots-sec-div .common-heading-text {
+        position: relative;
+        transform: unset;
+    }
+    .application-ss-main-slider {
+        margin-top: 35px;
+    }
+    .application-snapshots-sec-div .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .our-client-slider-section .slick-list {
+        max-width: 100% !important;
+    }
+    .testimonial-round {
+        display: none;
+    }
+    .testimonial-box-div {
+        padding: 20px !important;
+        flex-wrap: wrap;
+        /* margin: 0px 0px !important; */
+    }
+    .user-icon-div {
+        margin-right: 15px;
+    }
+    .user-feedback-div p {
+        font-size: 14px;
+    }
+    .common-highlight-text br {
+        display: none;
+    }
+    .application-snapshots-sec-div button.slick-prev {
+        top: unset !important;
+        bottom: -32px !important;
+        height: 30px !important;
+        width: 30px !important;
+        right: 60px !important;
+    }
+    .application-snapshots-sec-div button.slick-next {
+        top: unset !important;
+        bottom: -32px !important;
+        height: 30px !important;
+        width: 30px !important;
+        right: 15px !important;
+    }
+    .application-snapshots-sec-div button.slick-prev::before , .application-snapshots-sec-div button.slick-next::before {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 750px !important;
+    }
+    .navbar-toggler .navbar-toggler-icon {
+    	display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+	    -webkit-box-align: center;
+	        -ms-flex-align: center;
+	            align-items: center;
+	    -webkit-box-pack: center;
+	        -ms-flex-pack: center;
+	            justify-content: center;
+    }
+    .navbar-collapse.show {
+    	background-color: var(--primary-color);
+    }
+    nav .navbar-nav .nav-item {
+        margin-left: 0px;
+    }
+    .small-circle {
+    	display: none;
+    }
+    .big-circle {
+    	display: none;
+    }
+    .common-padding-div {
+    	padding-top: 60px;
+    	padding-bottom: 60px;
+    }
+    .small-text {
+    	font-size: 16px;
+    }
+    .common-para {
+    	font-size: 15px;
+    }
+    nav .navbar-nav .nav-item {
+        margin-left: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top: 1px solid rgb(238 163 80 / 24%);
+    }
+    nav .navbar-nav .nav-item .nav-link {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .navbar-nav {
+        background-color: #162e44;
+    }
+    .header-main-div .navbar-toggler {
+        margin-right: 0px;
+        padding: 3px 5px;
+        border-radius: 4px;
+        background-color: var(--primary-color);
+    }
+    .header-logo-div img {
+        width: 45px;
+    }
+    .banner-logo-div img {
+        max-width: 150px;
+    }
+    .header-main-div .navbar {
+        padding: 8px 0px !important;
+    }
+    .app-contains .small-heading {
+        font-size: 40px;
+    }
+    .app-contains .main-heading {
+        font-size: 40px;
+    }
+    .user-details-div {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    /*====================== Home Banner css start ======================*/
+    /*====================== Footer css start ======================*/
+    .footer-logo img {
+        max-width: 60px;
+    }
+    .footer-about-div {
+        padding-right: 0px;
+    }
+    .footer-products-space {
+        padding-left: 0px;
+    }
+    .quick-link-list-div h3 {
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+    .quick-link-list-div ul li a {
+        font-size: 14px;
+    }
+    .quick-link-list-div .common-para {
+        font-size: 14px;
+    }
+    .footer-social-div img {
+        margin-right: 10px;
+        max-width: 20px;
+    }
+    .footer-social-div {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .copy-right-sub-footer p {
+        font-size: 15px;
+    }
+    .newsletter-field-div .input-group-text {
+        min-width: 55px;
+        font-size: 11px;
+    }
+    .newsletter-field-div input {
+        padding-right: 68px;
+        padding-left: 15px;
+    }
+    /*====================== Footer css end ======================*/
+    .contact-field-div input {
+        height: 55px;
+    }
+    .contact-field-div input::-webkit-input-placeholder, .contact-field-div textarea::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+    .contact-field-div input::-moz-placeholder, .contact-field-div textarea::-moz-placeholder {
+        font-size: 14px;
+    }
+    .contact-field-div input:-ms-input-placeholder, .contact-field-div textarea:-ms-input-placeholder {
+        font-size: 14px;
+    }
+    .contact-field-div input::-ms-input-placeholder, .contact-field-div textarea::-ms-input-placeholder {
+        font-size: 14px;
+    }
+    .contact-field-div input::placeholder , .contact-field-div textarea::placeholder {
+        font-size: 14px;
+    }
+    .common-btn-div .btn {
+        font-size: 15px;
+        padding: 10px 20px;
+        min-width: 170px;
+    }
+    .common-heading-text h6 {
+        font-size: 15px;
+    }
+    .common-heading-text h2 {
+        font-size: 36px;
+    }
+    .contact-round-img {
+        max-width: 150px;
+    }
+    /*========================= contact us css end =========================*/
+    .about-us-left-round {
+        max-width: 100px;
+    }
+    .about-us-right-round {
+        max-width: 100px;
+    }
+    .about-us-div {
+        z-index: 99;
+    }
+    
+    /*========================= about us css end =========================*/
+    .rotate-heading {
+        left: -150px;
+    }
+    .application-snapshots-sec-div button.slick-prev::before {
+        font-size: 13px !important  ;
+    }
+    .application-snapshots-sec-div button.slick-next::before {
+        font-size: 13px !important;
+    }
+    .application-snapshots-sec-div button.slick-prev {
+        height: 35px !important;
+        width: 35px !important;
+        top: -33px !important;
+        right: 100px !important; 
+    }
+    .application-snapshots-sec-div button.slick-next {
+        height: 35px !important;
+        width: 35px !important;
+        top: -33px !important;
+    }
+    /* .our-client-slider-section .slick-list {
+        max-width: 100% !important;
+    } */
+    .testimonial-round {
+        display: none;
+    }
+    .common-highlight-text {
+        font-size: 16px;
+    }
+    .common-highlight-text br {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px !important;
+    }
+    .common-padding-div {
+    	padding-top: 70px;
+    	padding-bottom: 70px;
+    }
+    .big-circle {
+	    bottom: 2%;
+	    max-width: 70px;
+	}
+	.small-circle {
+	    bottom: 18%;
+	    right: 5%;
+	    max-width: 60px;
+	}
+	.small-text {
+		font-size: 18px;
+	}
+    .banner-logo-div img {
+        max-width: 150px;
+    }
+    .header-logo-div img {
+        width: 50px;
+    }
+    /*====================== Navbar css start ======================*/
+    nav .navbar-nav .nav-item .nav-link {
+    	font-size: 14px;
+    }
+    .header-main-div .navbar {
+        padding: 15px 0px;
+    }
+    /*====================== Navbar css end ======================*/
+
+    /*====================== Home Banner css start ======================*/
+    .app-contains .small-heading {
+        font-size: 48px;
+    }
+    .app-contains .main-heading {
+        font-size: 48px;
+    }
+    .appstore-btn-div img {
+        max-width: 180px;
+    }
+    .user-details-div {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    /*====================== Home Banner css end ======================*/
+    /*====================== Footer css start ======================*/
+    .footer-logo img {
+        max-width: 65px;
+    }
+    .footer-about-div {
+        padding-right: 0px;
+    }
+    .footer-products-space {
+        padding-left: 0px;
+    }
+    .quick-link-list-div h3 {
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+    .quick-link-list-div ul li a {
+        font-size: 15px;
+    }
+    .quick-link-list-div .common-para {
+        font-size: 15px;
+    }
+    .footer-social-div img {
+        margin-right: 15px;
+        max-width: 22px;
+    }
+    .footer-social-div {
+        margin-top: 30px;
+    }
+    .copy-right-sub-footer p {
+        font-size: 15px;
+    }
+    /*====================== Footer css end ======================*/
+    .contact-field-div input {
+        height: 55px;
+    }
+    .contact-field-div input::-webkit-input-placeholder, .contact-field-div textarea::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+    .contact-field-div input::-moz-placeholder, .contact-field-div textarea::-moz-placeholder {
+        font-size: 14px;
+    }
+    .contact-field-div input:-ms-input-placeholder, .contact-field-div textarea:-ms-input-placeholder {
+        font-size: 14px;
+    }
+    .contact-field-div input::-ms-input-placeholder, .contact-field-div textarea::-ms-input-placeholder {
+        font-size: 14px;
+    }
+    .contact-field-div input::placeholder , .contact-field-div textarea::placeholder {
+        font-size: 14px;
+    }
+    .common-btn-div .btn {
+        font-size: 15px;
+        padding: 10px 20px;
+        min-width: 170px;
+    }
+    .contact-round-img {
+        max-width: 150px;
+    }
+    /*========================= contact us css end =========================*/
+    .about-us-left-round {
+        max-width: 130px;
+    }
+    .about-us-right-round {
+        max-width: 120px;
+    }
+    .about-us-div {
+        z-index: 99;
+    }
+    .common-para {
+        font-size: 16px;
+    }
+    /*========================= about us css end =========================*/
+    .rotate-heading {
+        left: -150px;
+    }
+    .application-snapshots-sec-div button.slick-prev::before {
+        font-size: 13px !important  ;
+    }
+    .application-snapshots-sec-div button.slick-next::before {
+        font-size: 13px !important;
+    }
+    .application-snapshots-sec-div button.slick-prev {
+        height: 35px !important;
+        width: 35px !important;
+        top: -33px !important;
+        right: 100px !important; 
+    }
+    .application-snapshots-sec-div button.slick-next {
+        height: 35px !important;
+        width: 35px !important;
+        top: -33px !important;
+    }
+    .testimonial-box-div {
+        padding: 25px !important;
+    }
+    .user-icon-div {
+        margin-right: 20px;
+    }
+    .testimonial-round {
+        right: 0px;
+        bottom: -110px;
+        max-width: 220px;
+    }
+    .common-highlight-text br {
+        display: none;
+    }
+    .common-highlight-text {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .container {
+        max-width: 1140px !important;
+    }
+    .big-circle {
+	    bottom: 2%;
+	    max-width: 70px;
+	}
+	.small-circle {
+	    bottom: 16%;
+	    right: 5%;
+	    max-width: 60px;
+	}
+	.common-padding-div {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.small-text {
+		font-size: 18px;
+	}
+    .banner-logo-div img {
+        max-width: 165px;
+    }
+    .header-logo-div img {
+        width: 50px;
+    }
+    /*====================== Navbar css start ======================*/
+    nav .navbar-nav .nav-item .nav-link {
+    	font-size: 15px;
+    }
+    .header-main-div .navbar {
+        padding: 15px 0px;
+    }
+    /*====================== Navbar css end ======================*/
+
+    /*====================== Home Banner css start ======================*/
+    .app-contains .small-heading {
+        font-size: 52px;
+    }
+    .app-contains .main-heading {
+        font-size: 52px;
+    }
+    .user-details-div {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .appstore-btn-div img {
+        max-width: 190px;
+    }
+    /*====================== Home Banner css end ======================*/
+    /*====================== Footer css start ======================*/
+    .footer-logo img {
+        max-width: 70px;
+    }
+    .footer-social-div img {
+        margin-right: 15px;
+        max-width: 27px;
+    }
+    
+    /*====================== Footer css end ======================*/
+    .common-btn-div .btn {
+        font-size: 15px;
+        padding: 11px 20px;
+        min-width: 180px;
+    }
+    .contact-round-img {
+        max-width: 170px;
+    }
+    /*========================= contact us css end =========================*/
+    .about-us-left-round {
+        max-width: 130px;
+    }
+    .about-us-right-round {
+        max-width: 120px;
+    }
+    .about-us-div {
+        z-index: 99;
+    }
+   
+    .common-para {
+        font-size: 16px;
+    }
+    /*========================= about us css end =========================*/
+    .features-box-div {
+        max-width: 220px;
+    }
+    .rotate-heading {
+        left: -130px;
+    }
+    .application-snapshots-sec-div button.slick-prev::before {
+        font-size: 13px !important  ;
+    }
+    .application-snapshots-sec-div button.slick-next::before {
+        font-size: 13px !important;
+    }
+    .application-snapshots-sec-div button.slick-prev {
+        height: 35px !important;
+        width: 35px !important;
+        top: -33px !important;
+        right: 100px !important; 
+    }
+    .application-snapshots-sec-div button.slick-next {
+        height: 35px !important;
+        width: 35px !important;
+        top: -33px !important;
+    }
+    .testimonial-round {
+        position: absolute;
+        right: 0px;
+        bottom: -120px;
+        max-width: 240px;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1660px) {
+	.container {
+	    max-width: 1280px !important;
+	}
+	.big-circle {
+	    bottom: 2%;
+	    max-width: 70px;
+	}
+	.small-circle {
+	    bottom: 13%;
+	    right: 5%;
+	    max-width: 60px;
+	}
+    .header-main-div .navbar {
+        padding: 20px 0px;
+    }
+	/*====================== Home Banner css start ======================*/
+    .user-details-div {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .app-contains .small-heading {
+        font-size: 60px;
+    }
+    .app-contains .main-heading {
+        font-size: 60px;
+    }
+    /*====================== Home Banner css end ======================*/
+    .about-us-left-round {
+        max-width: 180px;
+    }
+    .about-us-right-round {
+        max-width: 150px;
+    }
+}
+
+
+
+/*====================== keyframes css start ======================*/
+@-webkit-keyframes smoothScroll {
+	0% {
+		-webkit-transform: translateY(-40px);
+		        transform: translateY(-40px);
+	}
+	100% {
+		-webkit-transform: translateY(0px);
+		        transform: translateY(0px);
+	}
+}
+@keyframes smoothScroll {
+	0% {
+		-webkit-transform: translateY(-40px);
+		        transform: translateY(-40px);
+	}
+	100% {
+		-webkit-transform: translateY(0px);
+		        transform: translateY(0px);
+	}
+}
+
+.image-move {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+.image-move {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+    0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+}
+@keyframes mover {
+    0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@-webkit-keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.pulse-effects {
+    -webkit-animation: pulse-animation 2s infinite;
+            animation: pulse-animation 2s infinite;
+}
+
+@-webkit-keyframes pulse-animation {
+    0% {
+        -webkit-box-shadow: 0 0 0 0px rgb(0 0 0 / 9%);
+                box-shadow: 0 0 0 0px rgb(0 0 0 / 9%);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 60px rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 60px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes pulse-animation {
+    0% {
+        -webkit-box-shadow: 0 0 0 0px rgb(0 0 0 / 9%);
+                box-shadow: 0 0 0 0px rgb(0 0 0 / 9%);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 60px rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 60px rgba(0, 0, 0, 0);
+    }
+}
+/*====================== keyframes css end ======================*/

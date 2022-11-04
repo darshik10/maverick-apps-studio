@@ -1,0 +1,1549 @@
+:root {
+    --primary-color: #4DC5E0;
+    --gray-color: #a19f9f;
+    --white-color: #ffffff;
+    --black-color: #1a191d;
+    --light-circle: #fcffff17;
+    --common-bg: #00081f;
+    --sky-color: #4dc5e0;
+    --bg-colr: #051127;
+    --section-bg-color:#00081f;
+    --footer-link-color: #DFDFDF;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-colr);
+    background-image: url(../../image/body-background.png);
+}
+.container {
+    max-width: 1400px !important;
+}
+.align-center {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.common-padding-div {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.common-heading-text {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: 600;
+}
+.small-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+.common-para {
+    color: var(--gray-color);
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+.common-para b , .common-ul-li-div ul li b {
+    font-weight: 600;
+    color: var(--gray-color);
+}
+.common-btn-div .btn {
+    border: 2px solid var(--primary-color);
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 45px;
+    font-size: 15px;
+    padding: 12px 25px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: none;
+    text-transform: uppercase;
+    min-width: 200px;
+}
+.common-btn-div .btn:hover {
+    transform: translateY(-8px);
+}
+.section-bg-color {
+    background-color: var(--section-bg-color);
+}
+
+/*========================= Navbar css start =========================*/
+.header-logo-div img {
+    width: 70px;
+}
+.header-main-div {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 99;
+}
+.sticky-header {
+    background-color: var(--section-bg-color);
+    box-shadow: 0 3px 6px #00000026, 0 3px 6px #00000021;
+}
+.header-main-div .navbar {
+    padding: 5px 0px;
+}
+nav .navbar-nav .nav-item {
+    margin-left: 20px;
+}
+nav .navbar-nav .nav-item .nav-link {
+    color: var(--white-color);
+    font-weight: 400;
+}
+.header-dropdown-div .dropdown-menu {
+    background-color: #ffffff;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-color: #e2e2e2!important;
+    border-radius: 0px;
+    margin-top: 0px;
+}
+.header-dropdown-div .dropdown-menu .dropdown-item {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.header-dropdown-div .dropdown-menu .dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.header-dropdown-div .dropdown-menu .dropdown-item:last-child {
+    border-bottom: 0px;
+}
+@media only screen and (min-width: 991px) {
+    .navbar .dropdown .dropdown-menu:hover, .navbar .dropdown:hover .dropdown-menu {
+        display: inherit;
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s,opacity .3s linear;
+    }
+  }
+/*========================= Navbar css end =========================*/
+
+/*========================= Home Banner css start =========================*/
+
+.user-details-div:before {
+    content: '';
+    background: rgba(77, 197, 224, 0.2);
+    filter: blur(125px);
+    position: absolute;
+    left: 40%;
+    top: -25%;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+}
+
+.user-details-div {
+    min-height: 800px;
+    height: 102vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.user-details-div .mt-space {
+    margin-top: -5%;
+}
+
+.app-contains {
+    position: relative;
+}
+/* .home-img-div:before {
+    background-image: url(../../image/dots-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    content: "";           
+    position: absolute;
+    width: 95%;
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+} */
+
+.home-img-div {
+    position: relative;
+}
+.home-img-div img {
+    max-width: 90%;
+}
+.app-contains {
+    width: 100%;
+}
+.app-contains h2 {
+    color: var(--white-color);
+    font-size: 70px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+.app-contains h3 {
+    color: var(--primary-color);
+    font-size: 75px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.banner-logo-div img {
+    max-width: 190px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.small-circle {
+    position: absolute;
+    bottom: 25%;
+    right: 5%;
+}
+.small-b-dots {
+    height: 70px;
+    width: 70px;
+    background: var(--light-circle);
+    border-radius: 50%;
+    position: relative;
+}
+.small-s-dots {
+    height: 15px;
+    width: 15px;
+    background-color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.big-circle {
+    position: absolute;
+    bottom: 5%;
+    right: 30px;
+    max-width: 140px;
+}
+.big-b-dots {
+    height: 125px;
+    width: 125px;
+    background: var(--light-circle);
+    border-radius: 50%;
+    position: relative;
+}
+.big-s-dots {
+    height: 65px;
+    width: 65px;
+    background-color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.avalable-now-div img {
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary-color);
+    filter: drop-shadow(0px 6px 15px rgba(255, 255, 255, 0.1));
+}
+/*========================= Home Banner css end =========================*/
+
+
+
+/*========================= About Us css start =========================*/
+
+.about-right-side {
+    border: 3px solid #4DC5E0;
+    box-shadow: 0px 0px 34px #33829A;
+    border-radius: 28px;
+    padding: 30px;
+}
+
+
+.about-contains {
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+.about-style {
+    display: flex;
+    align-items: center;
+}
+.about-style-circle {
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    margin-right: 15px;
+}
+.about-style:hover .about-style-circle {
+    background: var(--light-circle);
+    transition: all 0.2s ease;
+}
+.about-style:hover img {
+    filter: brightness(0) invert(1);
+    transition: all 0.2s ease;
+}
+.about-style h4 {
+    margin-bottom: 0px;
+    color: var(--white-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+.about-us-div {
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.half-circle-main-div {
+    position: absolute;
+    top: 50%;
+    left: -230px;
+    transform: translate(-0%,-50%);
+}
+.half-circle {
+    height: 250px;
+    width: 500px;
+    border-radius: 275px 275px 0 0;
+    background: var(--light-circle);
+    transform: rotate(90deg);
+}
+/*========================= About Us css end =========================*/
+
+/*========================= Feature css start =========================*/
+.feature-box {
+    margin-bottom: 40px;
+}
+.feature-div {
+    
+    position: relative;
+}
+.feature-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.feature-title i {
+    color: var(--secondary-color);
+    font-size: 19px;
+    margin-right: 15px;
+}
+.feature-title img {
+    margin-right: 15px;
+    max-width: 20px;
+}
+.feature-title h4 {
+    margin-bottom: 0px;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 21px;
+}
+.feature-div .big-circle {
+    max-width: 100px;
+    bottom: 7%;
+    right: 3%;
+}
+.features-phone-img img {
+    max-width: 70%;
+}
+
+.feature-list ul {
+    list-style: circle;
+    padding-left: 25px;
+}
+.feature-list ul li {
+    color: var(--footer-link-color);
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+
+
+
+
+
+
+/*========================= Feature css end =========================*/
+
+/*========================= Phone Screen Short css start =========================*/
+.phone-ss-div {
+    padding-top: 250px;
+    padding-bottom: 220px;
+    position: relative;
+}
+.phone-ss-div:before {
+    content: "";
+    height: 800px;
+    width: 800px;
+    background: var(--light-circle);
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse-animation 2s infinite;
+}
+.slick-slider-main-div {
+    position: relative;
+}
+.mob-frame-device {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -5px;
+    width: 321px;
+}
+.phone-ss-div .small-circle {
+    top: 33%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    right: unset;
+    max-width: 75px;
+}
+.phone-ss-div .small-circle .small-b-dots {
+    height: 60px;
+    width: 60px;
+}
+.phone-ss-div .big-circle {
+    top: 34%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+    right: unset;
+    max-width: 80px;
+}
+.phone-ss-div .big-circle .big-b-dots {
+    height: 80px;
+    width: 80px;
+}
+.phone-ss-div .big-circle .big-s-dots {
+    height: 25px;
+    width: 25px;
+}
+.phone-ss-div .slick-track img {
+    border-right: 2px solid #ffffff;
+}
+/*========================= Phone Screen Short css end =========================*/
+
+
+/*========================= our client review css start =========================*/
+
+.client-reviews {
+    margin-top: 50px;
+}
+.our-client-review-slider .testimonial {
+    background-color: var(--bg-colr);
+    padding: 30px 40px;
+    border: 1px solid #4DC5E0;
+    box-shadow: 0px 0px 10px #33829A;
+    border-radius: 15px;
+    position: relative;
+}
+.our-client-review-slider .testimonial p {
+    font-style: italic;
+}
+.our-client-review-slider .testimonial:after {
+    content: url(../../image/tesimonial-after.png);
+    position: absolute;
+    left: 20px;  
+    z-index: 0;
+    bottom: -56px;
+}
+.our-client-review-slider .author-info {
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.our-client-review-slider .author-info .author-img {
+    width: 50px;
+    margin-right: 10px;
+}
+.author-name h5 {
+    margin: 0;
+    color: var(--white-color);
+    font-size: 18px;
+}
+.client-reviews .slick-track {
+    margin-bottom: 30px;
+}
+.client-reviews .slick-dots .slick-active {
+    background-color: var(--primary-color);
+    border-radius: 100%;
+}
+.client-reviews .slick-dots li {
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 100%;
+    margin: 0 3px;
+}
+
+
+/*========================= our client review css end =========================*/
+
+
+/*========================= Contact us css start =========================*/
+.field-box-div .form-group {
+    margin-bottom: 30px;
+}
+.field-box-div input,
+.field-box-div textarea {
+    border-radius: 10px;
+    padding: 10px 35px;
+    height: 55px;
+    color: var(--white-color);
+    background-color: var(--bg-colr);
+    border: none;
+}
+.field-box-div textarea {
+    height: auto;
+    padding: 20px 35px;
+}
+.field-box-div input:focus,
+.field-box-div textarea:focus {
+    color: var(--white-color);
+    background-color: var(--bg-colr);
+    border-color: var(--secondary-color);
+    outline: unset;
+    box-shadow: unset;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+.contact-img-div img {
+    max-width: 300px;
+}
+/*========================= Contact us css end =========================*/
+
+/*========================= Footer css start =========================*/
+.footer-about-div {
+    padding-right: 10%;
+}
+.footer-logo img {
+    max-width: 100px;
+}
+.field-box-div {
+    filter: drop-shadow(0px 0px 5px #33829A);
+}
+.quick-link-list-div h3 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: var(--white-color);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 45px;
+}
+.quick-link-list-div .common-para {
+    color: var(--footer-link-color);
+    font-weight: 300;
+}
+.footer-social-div {
+    margin-top: 50px;
+}
+.footer-social-div a {
+    text-decoration: none!important;
+}
+.footer-social-div a i {
+    margin-right: 15px;
+    color: var(--white-color);
+    font-size: 18px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+.quick-link-list-div ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.quick-link-list-div ul li {
+    margin-bottom: 15px;
+    position: relative;
+}
+.quick-link-list-div ul li a {
+    text-decoration: none;
+    color: var(--footer-link-color);
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 0;
+    letter-spacing: .5px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+.footer-products-space {
+    padding-left: 10%;
+}
+.footer-logo {
+    margin-bottom: 30px;
+}
+.quick-link-list-div1 ul li:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 0;
+    vertical-align: middle;
+    font-weight: 100;
+    color: var(--footer-link-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+    font-size: 18px;
+}
+.quick-link-list-div1 ul .footeremailicon:before {
+    content: "\f0e0";
+}
+.quick-link-list-div1 ul .footercallicon:before {
+    content: "\f095";
+}
+.quick-link-list-div1 ul li {
+    padding-left: 30px!important;
+}
+.footer-social-div img {
+    margin-right: 20px;
+}
+.copy-right-footer {
+    background-color: var(--bg-colr);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.copy-right-sub-footer p {
+    text-align: center;
+    margin-bottom: 0px;
+    color: var(--white-color);
+    font-size: 16px;
+}
+.newsletter-div {
+    margin-top: 27px;
+}
+.newsletter-field-div input  {
+    border-radius: 50px !important;
+    border: 2px solid var(--primary-color);
+    background: rgba(217, 217, 217, 0.15);
+    height: 50px;
+    padding-left: 20px;
+    color: var(--footer-link-color) !important;
+    padding-right: 90px;
+    font-size: 14px;
+    -webkit-box-shadow: unset !important;
+            box-shadow: unset !important;
+    outline: unset !important;
+}
+.newsletter-field-div input:focus {
+    background: rgba(217, 217, 217, 0.15);
+}
+.newsletter-field-div input::-webkit-input-placeholder {
+    color: var(--footer-link-color);
+    font-size: 14px;
+}
+.newsletter-field-div input::-moz-placeholder {
+    color: var(--footer-link-color);
+    font-size: 14px;
+}
+.newsletter-field-div input:-ms-input-placeholder {
+    color: var(--footer-link-color);
+    font-size: 14px;
+}
+.newsletter-field-div input::-ms-input-placeholder {
+    color: var(--footer-link-color);
+    font-size: 14px;
+}
+.newsletter-field-div input::placeholder {
+    color: var(--footer-link-color);
+    font-size: 14px;
+}
+.newsletter-field-div .input-group-text {
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    border-radius: 50px !important;
+    border: 2px solid var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    -webkit-transform: translate(-6px,-50%);
+        -ms-transform: translate(-6px,-50%);
+            transform: translate(-6px,-50%);
+    z-index: 999;
+    min-width: 75px;
+    text-align: center;
+    display: block;
+}
+.newsletter-div h3 {
+    margin-bottom: 18px;
+}
+/*========================= Footer css end =========================*/
+
+.inner-banner-div {
+    background-color: var(--section-bg-color);
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.inner-heading-title {
+    text-align: center;
+    color: var(--white-color);
+}
+.common-ul-li-div ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.common-ul-li-div ul li {
+    margin-bottom: 10px;
+    position: relative;
+    text-decoration: none;
+    color: var(--gray-color);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-left: 22px;
+    /* letter-spacing: .5px; */
+}
+.common-ul-li-div ul li:before {
+    font-family: FontAwesome;
+    content: "\f10c";
+    display: inline-block;
+    padding-right: 0;
+    vertical-align: middle;
+    font-weight: 100;
+    color: var(--primarycolor);
+    position: absolute;
+    left: 0;
+    top: 0px;
+    font-size: 12px;
+    transform: unset;
+}
+.common-ul-li-div ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+.common-ul-li-div ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.small-heading-text {
+    color: var(--footer-link-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.small-heading-para-text {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-top: 15px;
+}
+.common-para a {
+    word-wrap: break-word;
+    color: var(--primary-color);
+}
+
+
+/* - Responsive CSS - */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        max-width: 540px !important;
+    }
+    .small-circle {
+        display: none;
+    }
+    .big-circle {
+        display: none;
+    }
+    .common-padding-div {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .small-text {
+        font-size: 18px;
+    }
+    .common-heading-text {
+        font-size: 30px;
+    }
+    .column-reverse-div {
+        flex-direction: column-reverse;
+    }
+    .tech-partner-div img {
+        max-width: 220px;
+        margin-top: 30px;
+    }
+    .navbar-toggler {
+    	background-color: var(--white);
+    }
+    .navbar-toggler .navbar-toggler-icon {
+    	display: flex;
+	    align-items: center;
+	    justify-content: center;
+    }
+    .navbar-collapse.show {
+    	background-color: var(--primary-color);
+    }
+    nav .navbar-nav .nav-item {
+        margin-left: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top: 1px solid rgb(255 255 255 / 24%)
+    }
+    nav .navbar-nav .nav-item .nav-link {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .navbar-nav {
+        background-color: var(--section-bg-color);
+    }
+    .header-main-div .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header-main-div .header-logo-div {
+        padding-left: 15px;
+    }
+    .header-main-div .navbar-toggler {
+        margin-right: 15px;
+        padding: 3px 5px;
+        border-radius: 4px;
+        background-color: var(--sky-color);
+    }
+    .header-logo-div img {
+        width: 55px;
+    }
+    /*====================== Home Banner css start ======================*/
+    .user-details-div .mt-space {
+        margin-top: 0px;
+    }
+    .user-details-div {
+        min-height: auto;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .banner-logo-div {
+        text-align: center;
+    }
+    .banner-logo-div img {
+        max-width: 120px;
+        margin-bottom: 5px;
+    }
+    .app-contains h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .app-contains h3 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .home-img-div {
+        margin-top: 30px;
+    }
+    .home-img-div img {
+        max-width: 100%;
+    }
+    .user-details-div:before {
+        animation: unset;
+        display: none;
+    }
+    .avalable-now-div {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .avalable-now-div img {
+        margin-bottom: 10px;
+    }
+    .home-img-div:before {
+        width: 100%;
+    }
+    
+    /*====================== Home Banner css end ======================*/
+
+    /*====================== Phone Screen Short css start ======================*/
+    .phone-ss-div:before {
+        display: none;
+    }
+    .phone-ss-div {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .mob-frame-device {
+        display: none;
+    }
+    .phone-ss-slider .slick-slide {
+        filter: grayscale(0) !important;
+    }
+    .slick-slider {
+        margin-bottom: 0px !important;
+    }
+    /*====================== Phone Screen Short css end ======================*/
+
+    /*====================== About us css start ======================*/
+
+    .about-contains {
+        margin-top: 30px;
+    }
+
+    .about-right-side {
+        border-radius: 20px;
+        height: auto;
+        width: 100%;
+        padding-top: 20px;
+        margin-top: 35px;
+    }
+    .about-style {
+        margin-bottom: 10px;
+    }
+    .phone-img img {
+        max-width: 100%;
+    }
+    .half-circle-main-div {
+        display: none;
+    }
+    /*====================== About us css end ======================*/
+
+    /*====================== Feature css start ======================*/
+    .features-phone-img {
+        text-align: center;
+    }
+    .features-phone-img img {
+        max-width: 80%;
+    }
+    .feature-list ul li {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    /*====================== Feature css end ======================*/
+
+    /*====================== our client css start ======================*/
+    .our-client-review-slider .testimonial {
+        background-color: var(--bg-colr);
+        padding: 20px 25px;
+    }
+     /*====================== our client css end ======================*/
+
+    /*====================== Contact us css start ======================*/
+    .contact-img-div {
+        margin-top: 50px;
+    }
+    .contact-img-div img {
+        max-width: 100%;
+    }
+    /*====================== Contact us css end ======================*/
+    /*====================== Footer css start ======================*/
+    .footer-social-div {
+        margin-top: 30px;
+    }
+    .footer-social-div img {
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    .quick-link-list-div h3 {
+        margin-bottom: 20px;
+        font-size: 22px;
+        margin-top: 25px;
+    }
+    .footer-products-space {
+        padding-left: 0px;
+    }
+    .footer-about-div {
+        padding-right: 0px;
+    }
+    /*====================== Footer css end ======================*/
+
+   
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 750px !important;
+    }
+    .navbar-toggler {
+    	background-color: var(--white);
+    }
+    .navbar-toggler .navbar-toggler-icon {
+    	display: flex;
+	    align-items: center;
+	    justify-content: center;
+    }
+    .navbar-collapse.show {
+    	background-color: var(--primary-color);
+    }
+    nav .navbar-nav .nav-item {
+        margin-left: 0px;
+    }
+    .small-circle {
+    	display: none;
+    }
+    .big-circle {
+    	display: none;
+    }
+    .common-padding-div {
+    	padding-top: 60px;
+    	padding-bottom: 60px;
+    }
+    .common-heading-text {
+    	font-size: 32px;
+    }
+    .small-text {
+    	font-size: 16px;
+    }
+    .common-para {
+    	font-size: 15px;
+    }
+    nav .navbar-nav .nav-item {
+        margin-left: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top: 1px solid rgb(238 163 80 / 24%);
+    }
+    nav .navbar-nav .nav-item .nav-link {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .navbar-nav {
+        background-color: #162e44;
+    }
+    .header-main-div .navbar-toggler {
+        padding: 3px 5px;
+        border-radius: 4px;
+        background-color: var(--sky-color);
+    }
+    .header-logo-div img {
+        width: 55px;
+    }
+    .banner-logo-div img {
+        max-width: 150px;
+    }
+    /*====================== Home Banner css start ======================*/
+    .user-details-div {
+        height: auto;
+        min-height: 600px;
+    }
+    .app-contains h2 {
+        font-size: 50px;
+    }
+    .app-contains h3 {
+        font-size: 48px;
+    }
+    .home-img-div img {
+        max-width: 90%;
+    }
+    .connects-div h3 {
+        font-size: 54px;
+    }
+    /*====================== Home Banner css end ======================*/
+
+    /*====================== About Us css start ======================*/
+   
+    .about-style h4 {
+    	font-size: 15px;
+    }
+    .about-style-circle {
+	    padding: 5px;
+	    width: 40px;
+	    height: 40px;
+	    margin-right: 7px;
+	}
+    .half-circle-main-div {
+        display: none;
+    }
+
+    /*====================== About Us css end ======================*/
+
+    /*====================== Feature css start ======================*/
+    .feature-title h4 {
+    	font-size: 18px;
+    }
+    .features-phone-img img {
+	    max-width: 280px;
+	}
+    .feature-list ul li {
+        margin-bottom: 10px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    /*====================== Feature css end ======================*/
+
+    /*====================== Phone Screen Short css start ======================*/
+    .mob-frame-device {
+	    width: 253px;
+	}
+	.phone-ss-div:before {
+		height: 700px;
+    	width: 700px;
+	}
+    /*====================== Phone Screen Short css end ======================*/
+     /*====================== Footer css start ======================*/
+    
+     .footer-about-div {
+        padding-right: 0px;
+    }
+    .footer-products-space {
+        padding-left: 0px;
+    }
+    .quick-link-list-div h3 {
+        margin-bottom: 20px;
+        font-size: 22px;
+        margin-top: 25px;
+    }
+    .quick-link-list-div ul li a {
+        font-size: 14px;
+    }
+    .quick-link-list-div .common-para {
+        font-size: 14px;
+    }
+    .footer-social-div img {
+        margin-right: 10px;
+        max-width: 20px;
+    }
+    .footer-social-div {
+        margin-top: 10px;
+    }
+    .copy-right-sub-footer p {
+        font-size: 15px;
+    }
+    .newsletter-field-div .input-group-text {
+        min-width: 55px;
+        font-size: 11px;
+    }
+    .newsletter-field-div input {
+        padding-right: 68px;
+        padding-left: 15px;
+    }
+    /*====================== Footer css end ======================*/
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px !important;
+    }
+    .common-padding-div {
+    	padding-top: 70px;
+    	padding-bottom: 70px;
+    }
+    .big-circle {
+	    bottom: 2%;
+	    max-width: 70px;
+	}
+	.small-circle {
+	    bottom: 18%;
+	    right: 5%;
+	    max-width: 60px;
+	}
+	.common-heading-text {
+		font-size: 34px;
+	}
+	.small-text {
+		font-size: 18px;
+	}
+    .banner-logo-div img {
+        max-width: 150px;
+    }
+    .header-logo-div img {
+        width: 55px;
+    }
+    /*====================== Navbar css start ======================*/
+    nav .navbar-nav .nav-item .nav-link {
+    	font-size: 14px;
+    }
+    /*====================== Navbar css end ======================*/
+
+    /*====================== Home Banner css start ======================*/
+    .user-details-div {
+        height: auto;
+        min-height: 650px;
+    }
+    .app-contains h2 {
+        font-size: 50px;
+    }
+    .app-contains h3 {
+        font-size: 48px;
+    }
+    .home-img-div img {
+        max-width: 70%;
+    }
+    .connects-div h3 {
+        font-size: 54px;
+    }
+    /*====================== Home Banner css end ======================*/
+
+    /*====================== About css start ======================*/
+
+	.about-style h4 {
+		font-size: 18px;
+	}
+    .half-circle-main-div {
+        display: none;
+    }
+    .big-b-dots {
+        width: 90px;
+        height: 90px;
+    }
+    .big-s-dots {
+        width: 40px;
+        height: 40px;
+    }
+    .small-b-dots {
+        width: 45px;
+        height: 45px;
+    }
+    /*====================== About css end ======================*/
+
+    /*====================== Features css start ======================*/
+    .features-phone-img img {
+	    max-width: 85%;
+	}
+	.feature-title h4 {
+		font-size: 19px;
+	}
+	.feature-div .big-circle {
+		display: none;
+	}
+    
+    /*====================== Features css end ======================*/
+
+    /*====================== Phone Screen Short css start ======================*/
+    .mob-frame-device {
+	    width: 215px;
+	}
+	.phone-ss-div:before {
+		height: 620px;
+		width: 620px;
+	}
+	.phone-ss-div .small-circle {
+		top: 38%;
+    	left: 57%;
+	}
+    .phone-ss-div .big-circle {
+        top: 37%;
+    }
+    /*====================== Phone Screen Short css end ======================*/
+
+    /*====================== Contact Us css start ======================*/
+    .contact-img-div img {
+	    max-width: 250px;
+	}
+    /*====================== Contact Us css end ======================*/
+    /*====================== Footer css start ======================*/
+    .footer-logo img {
+        max-width: 65px;
+    }
+    .footer-about-div {
+        padding-right: 0px;
+    }
+    .footer-products-space {
+        padding-left: 0px;
+    }
+    .quick-link-list-div h3 {
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+    .quick-link-list-div ul li a {
+        font-size: 15px;
+    }
+    .quick-link-list-div .common-para {
+        font-size: 15px;
+    }
+    .footer-social-div img {
+        margin-right: 15px;
+        max-width: 22px;
+    }
+    .footer-social-div {
+        margin-top: 30px;
+    }
+    .copy-right-sub-footer p {
+        font-size: 15px;
+    }
+    /*====================== Footer css end ======================*/
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .container {
+        max-width: 1140px !important;
+    }
+    .big-circle {
+	    bottom: 2%;
+	    max-width: 70px;
+	}
+	.small-circle {
+	    bottom: 16%;
+	    right: 5%;
+	    max-width: 60px;
+	}
+	.common-padding-div {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.common-heading-text {
+		font-size: 44px;
+	}
+	.small-text {
+		font-size: 18px;
+	}
+    .banner-logo-div img {
+        max-width: 165px;
+    }
+    .header-logo-div img {
+        width: 60px;
+    }
+    /*====================== Navbar css start ======================*/
+    nav .navbar-nav .nav-item .nav-link {
+    	font-size: 15px;
+    }
+    /*====================== Navbar css end ======================*/
+
+    /*====================== Home Banner css start ======================*/
+    .app-contains h2 {
+        font-size: 54px;
+    }
+    .app-contains h3 {
+        font-size: 60px;
+    }
+    .home-img-div img {
+        max-width: 70%;
+    }
+    .user-details-div .mt-space {
+        margin-top: -7%;
+    }
+    .home-img-div:before {
+    	width: 100%;
+    }
+    /*====================== Home Banner css end ======================*/
+
+    /*====================== About css start ======================*/
+    .phone-img img {
+	    max-width: 280px;
+	}
+	.about-right-side {
+		height: 550px;
+    	width: 550px;
+	}
+	.about-style h4 {
+		font-size: 18px;
+	}
+    .half-circle-main-div {
+        left: -300px;
+    }
+    .big-b-dots {
+        width: 90px;
+        height: 90px;
+    }
+    .big-s-dots {
+        width: 40px;
+        height: 40px;
+    }
+    .small-b-dots {
+        width: 45px;
+        height: 45px;
+    }
+    /*====================== About css end ======================*/
+
+    /*========================= Feature css start =========================*/
+    .features-phone-img img {
+	    max-width: 72%;
+	}
+	.feature-div .big-circle {
+		display: none;
+	}
+    /*========================= Feature css end =========================*/
+
+    /*========================= Phone Screen Short css start =========================*/
+    .mob-frame-device {
+        width: 259px;
+        margin-top: -4px;
+    }
+    .phone-ss-div:before {
+    	height: 700px;
+    	width: 700px;
+    }
+    .phone-ss-div .small-circle {
+    	top: 37%;
+    }
+    .contact-img-div img {
+	    max-width: 250px;
+	}
+    .phone-ss-div .big-circle {
+        top: 35%;
+    }
+    /*========================= Phone Screen Short css end =========================*/
+      /*====================== Footer css start ======================*/
+      .footer-logo img {
+        max-width: 70px;
+    }
+    .footer-social-div img {
+        margin-right: 15px;
+        max-width: 27px;
+    }
+    
+    /*====================== Footer css end ======================*/
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1660px) {
+	.container {
+	    max-width: 1280px !important;
+	}
+	.big-circle {
+	    bottom: 2%;
+	    max-width: 70px;
+	}
+	.small-circle {
+	    bottom: 13%;
+	    right: 5%;
+	    max-width: 60px;
+	}
+	/*====================== Home Banner css start ======================*/
+    .app-contains h2 {
+        font-size: 58px;
+    }
+    .app-contains h3 {
+        font-size: 66px;
+    }
+    .home-img-div img {
+        max-width: 370px;
+    }
+    .user-details-div .mt-space {
+        margin-top: -4%;
+    }
+    .home-img-div:before {
+    	width: 100%;
+    }
+    /*====================== Home Banner css end ======================*/
+
+    /*====================== About css start ======================*/
+    .phone-img img {
+	    max-width: 280px;
+	}
+	.about-right-side {
+		height: 550px;
+    	width: 550px;
+	}
+	.about-style h4 {
+		font-size: 18px;
+	}
+    .big-b-dots {
+        width: 90px;
+        height: 90px;
+    }
+    .big-s-dots {
+        width: 40px;
+        height: 40px;
+    }
+    .small-b-dots {
+        width: 45px;
+        height: 45px;
+    }
+    /*====================== About css end ======================*/
+
+    /*========================= Feature css start =========================*/
+    .features-phone-img img {
+	    max-width: 72%;
+	}
+    /*========================= Feature css end =========================*/
+
+    /*========================= Phone Screen Short css start =========================*/
+    .mob-frame-device {
+        width: 293px;
+        margin-top: -4px;
+    }
+    .phone-ss-div:before {
+    	height: 700px;
+    	width: 700px;
+    }
+    .phone-ss-div .small-circle {
+    	top: 37%;
+    }
+    .contact-img-div img {
+	    max-width: 250px;
+	}
+    .half-circle-main-div {
+        left: -275px;
+    }
+    /*========================= Phone Screen Short css end =========================*/
+}
+
+
+
+/*====================== keyframes css start ======================*/
+.image-move {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+.image-move {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@-webkit-keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@-o-keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@-moz-keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.pulse-effects {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgb(0 0 0 / 9%);
+    }
+    100% {
+        box-shadow: 0 0 0 60px rgba(0, 0, 0, 0);
+    }
+}
+/*====================== keyframes css end ======================*/

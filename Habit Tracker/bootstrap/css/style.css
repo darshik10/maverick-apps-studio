@@ -1,0 +1,1343 @@
+:root {
+    --primary-color: #122537;
+    --primary-color-light: #2c5364;
+    /* --primary-color-light: hsl( var(--primary-color) h s calc(l - 5%)); */
+    --secondary-color: #eea350;
+    --gray-color: #777;
+    --white-color: #ffffff;
+    --black-color: #1a191d;
+    --gradient: linear-gradient(90deg, var(--primary-color-light) 25%, var(--primary-color) 99%);
+    --common-bg: #fafafa;
+    --sky-color: #4dc5e0;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    max-width: 1400px !important;
+}
+.align-center {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.common-padding-div {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.common-heading-text {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.small-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+.common-para {
+    color: var(--gray-color);
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+.common-para b , .common-ul-li-div ul li b {
+    font-weight: 600;
+    color: #333333;
+}
+.common-btn-div .btn {
+    border: 2px solid var(--primary-color);
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 45px;
+    font-size: 15px;
+    padding: 12px 25px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: none;
+    text-transform: uppercase;
+    min-width: 200px;
+}
+.common-btn-div .btn:hover {
+    transform: translateY(-8px);
+}
+
+/*========================= Navbar css start =========================*/
+.header-logo-div img {
+    width: 70px;
+}
+.header-main-div {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 99;
+}
+.sticky-header {
+    background-color: var(--primary-color);
+    box-shadow: 0 3px 6px #00000026, 0 3px 6px #00000021;
+}
+.header-main-div .navbar {
+    padding: 5px 0px;
+}
+nav .navbar-nav .nav-item {
+    margin-left: 20px;
+}
+nav .navbar-nav .nav-item .nav-link {
+    color: var(--white-color);
+    font-weight: 400;
+}
+.header-dropdown-div .dropdown-menu {
+    background-color: #ffffff;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-color: #e2e2e2!important;
+    border-radius: 0px;
+    margin-top: 0px;
+}
+.header-dropdown-div .dropdown-menu .dropdown-item {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.header-dropdown-div .dropdown-menu .dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.header-dropdown-div .dropdown-menu .dropdown-item:last-child {
+    border-bottom: 0px;
+}
+@media only screen and (min-width: 991px) {
+    .navbar .dropdown .dropdown-menu:hover, .navbar .dropdown:hover .dropdown-menu {
+        display: inherit;
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s,opacity .3s linear;
+    }
+  }
+/*========================= Navbar css end =========================*/
+
+/*========================= Home Banner css start =========================*/
+.user-details-div {
+    min-height: 800px;
+    height: 102vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    background-color: var(--primary-color);
+}
+.user-details-div .mt-space {
+    margin-top: -5%;
+}
+.user-details-div:before {
+    background-image: url(../../image/wave.png);
+    background-size: contain;
+    background-repeat: repeat no-repeat;
+    background-position-x: center;
+    height: 100px;
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -3px;
+    background-position: bottom;
+    animation: animatedBackground 120s linear infinite;
+    -ms-animation: animatedBackground 120s linear infinite;
+    -moz-animation: animatedBackground 120s linear infinite;
+    -webkit-animation: animatedBackground 120s linear infinite;
+}
+.app-contains {
+    position: relative;
+}
+.home-img-div:before {
+    background-image: url(../../image/dots-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    content: "";           
+    position: absolute;
+    width: 95%;
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+}
+
+.home-img-div {
+    position: relative;
+}
+.home-img-div img {
+    max-width: 68%;
+}
+.app-contains {
+    width: 100%;
+}
+.app-contains h2 {
+    color: #eaa04f;
+    font-size: 70px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+.app-contains h3 {
+    color: var(--white-color);
+    font-size: 75px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.banner-logo-div img {
+    max-width: 190px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.small-circle {
+    position: absolute;
+    bottom: 25%;
+    right: 5%;
+}
+.small-b-dots {
+    height: 70px;
+    width: 70px;
+    background: var(--gradient);
+    border-radius: 50%;
+    position: relative;
+}
+.small-s-dots {
+    height: 15px;
+    width: 15px;
+    background-color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.big-circle {
+    position: absolute;
+    bottom: 5%;
+    right: 30px;
+    max-width: 140px;
+}
+.big-b-dots {
+    height: 125px;
+    width: 125px;
+    background: var(--gradient);
+    border-radius: 50%;
+    position: relative;
+}
+.big-s-dots {
+    height: 65px;
+    width: 65px;
+    background-color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+/*========================= Home Banner css end =========================*/
+
+/*========================= Footer css start =========================*/
+footer {
+    padding-top: 150px;
+    background: var(--gradient);
+    position: relative;
+}
+footer:before {
+    background-image: url(../../image/wave.png);
+    background-size: contain;
+    background-repeat: repeat no-repeat;
+    background-position-x: center;
+    height: 100px;
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: -3px;
+    background-position: bottom;
+    animation: animatedBackground 120s linear infinite;
+    -ms-animation: animatedBackground 120s linear infinite;
+    -moz-animation: animatedBackground 120s linear infinite;
+    -webkit-animation: animatedBackground 120s linear infinite;
+    transform: scale(-1);
+}
+.footer-logo-div img {
+    max-width: 180px;
+}
+.footer-address p,
+.footer-address a {
+    color: var(--white-color);
+    font-weight: 300;
+    text-decoration: none;
+}
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+footer li {
+    display: inline;
+    margin: 0px 10px;
+}
+.social-icons li a {
+    font-size: 24px;
+    color: var(--white-color);
+    text-decoration: none;
+}
+.footer-bottom ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-bottom {
+    border-top: 1px solid #565656;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-bottom a,
+.footer-bottom p {
+    color: var(--white-color);
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+.footer-bottom a:hover {
+    color: #eea350;
+    text-decoration: none;
+}
+.social-icons img {
+    max-width: 24px;
+}
+/*========================= Footer css end =========================*/
+
+/*========================= About Us css start =========================*/
+
+.about-right-side {
+    background: var(--gradient);
+    border-radius: 100%;
+    height: 600px;
+    width: 600px;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.phone-img img {
+    max-width: 66%;
+}
+.about-contains {
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+.about-style {
+    display: flex;
+    align-items: center;
+}
+.about-style-circle {
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    margin-right: 15px;
+}
+.about-style:hover .about-style-circle {
+    background: var(--gradient);
+    transition: all 0.2s ease;
+}
+.about-style:hover img {
+    filter: brightness(0) invert(1);
+    transition: all 0.2s ease;
+}
+.about-style h4 {
+    margin-bottom: 0px;
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+.about-us-div {
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.half-circle-main-div {
+    position: absolute;
+    top: 50%;
+    left: -230px;
+    transform: translate(-0%,-50%);
+}
+.half-circle {
+    height: 250px;
+    width: 500px;
+    border-radius: 275px 275px 0 0;
+    background: var(--gradient);
+    transform: rotate(90deg);
+}
+/*========================= About Us css end =========================*/
+
+/*========================= Feature css start =========================*/
+.feature-box {
+    margin-bottom: 40px;
+}
+.feature-div {
+    background-color: var(--common-bg);
+    position: relative;
+}
+.feature-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.feature-title i {
+    color: var(--secondary-color);
+    font-size: 19px;
+    margin-right: 15px;
+}
+.feature-title img {
+    margin-right: 15px;
+    max-width: 20px;
+}
+.feature-title h4 {
+    margin-bottom: 0px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 21px;
+}
+.feature-div .big-circle {
+    max-width: 100px;
+    bottom: 7%;
+    right: 3%;
+}
+.features-phone-img img {
+    max-width: 70%;
+}
+/*========================= Feature css end =========================*/
+
+/*========================= Phone Screen Short css start =========================*/
+.phone-ss-div {
+    padding-top: 250px;
+    padding-bottom: 220px;
+    position: relative;
+}
+.phone-ss-div:before {
+    content: "";
+    height: 800px;
+    width: 800px;
+    background: var(--gradient);
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse-animation 2s infinite;
+}
+.slick-slider-main-div {
+    position: relative;
+}
+.mob-frame-device {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -5px;
+    width: 321px;
+}
+.phone-ss-div .small-circle {
+    top: 33%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    right: unset;
+    max-width: 75px;
+}
+.phone-ss-div .small-circle .small-b-dots {
+    height: 60px;
+    width: 60px;
+}
+.phone-ss-div .big-circle {
+    top: 34%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+    right: unset;
+    max-width: 80px;
+}
+.phone-ss-div .big-circle .big-b-dots {
+    height: 80px;
+    width: 80px;
+}
+.phone-ss-div .big-circle .big-s-dots {
+    height: 25px;
+    width: 25px;
+}
+.phone-ss-div .slick-track img {
+    border-right: 2px solid #ffffff;
+}
+/*========================= Phone Screen Short css end =========================*/
+
+/*========================= Tech Partner css start =========================*/
+.tech-partner-div {
+    background-color: var(--common-bg);
+}
+.tech-partner-div img {
+    max-width: 250px;
+    margin-top: 40px;
+}
+/*========================= Tech Partner css end =========================*/
+
+/*========================= Contact us css start =========================*/
+.field-box-div .form-group {
+    margin-bottom: 30px;
+}
+.field-box-div input,
+.field-box-div textarea {
+    border-radius: 10px;
+    padding: 10px 35px;
+    height: 55px;
+    color: var(--black-color);
+    background-color: #efefee;
+    border: 1px solid #efefee;
+}
+.field-box-div textarea {
+    height: auto;
+    padding: 20px 35px;
+}
+.field-box-div input:focus,
+.field-box-div textarea:focus {
+    color: #686868;
+    background-color: transparent;
+    border-color: var(--secondary-color);
+    outline: unset;
+    box-shadow: unset;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+.contact-img-div img {
+    max-width: 300px;
+}
+/*========================= Contact us css end =========================*/
+
+.inner-banner-div {
+    background-color: var(--primary-color);
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.inner-heading-title {
+    text-align: center;
+    color: var(--white-color);
+}
+.common-ul-li-div ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.common-ul-li-div ul li {
+    margin-bottom: 10px;
+    position: relative;
+    text-decoration: none;
+    color: var(--gray-color);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-left: 22px;
+    /* letter-spacing: .5px; */
+}
+.common-ul-li-div ul li:before {
+    font-family: FontAwesome;
+    content: "\f10c";
+    display: inline-block;
+    padding-right: 0;
+    vertical-align: middle;
+    font-weight: 100;
+    color: var(--primarycolor);
+    position: absolute;
+    left: 0;
+    top: 0px;
+    font-size: 12px;
+    transform: unset;
+}
+.common-ul-li-div ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+.common-ul-li-div ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.small-heading-text {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.small-heading-para-text {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-top: 15px;
+}
+.common-para a {
+    word-wrap: break-word;
+}
+
+
+/* - Responsive CSS - */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        max-width: 540px !important;
+    }
+    .small-circle {
+        display: none;
+    }
+    .big-circle {
+        display: none;
+    }
+    .common-padding-div {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .small-text {
+        font-size: 18px;
+    }
+    .common-heading-text {
+        font-size: 36px;
+    }
+    .column-reverse-div {
+        flex-direction: column-reverse;
+    }
+    .tech-partner-div img {
+        max-width: 220px;
+        margin-top: 30px;
+    }
+    .navbar-toggler {
+    	background-color: var(--white);
+    }
+    .navbar-toggler .navbar-toggler-icon {
+    	display: flex;
+	    align-items: center;
+	    justify-content: center;
+    }
+    .navbar-collapse.show {
+    	background-color: var(--primary-color);
+    }
+    nav .navbar-nav .nav-item {
+        margin-left: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top: 1px solid rgb(238 163 80 / 24%);
+    }
+    nav .navbar-nav .nav-item .nav-link {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .navbar-nav {
+        background-color: #162e44;
+    }
+    .header-main-div .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header-main-div .header-logo-div {
+        padding-left: 15px;
+    }
+    .header-main-div .navbar-toggler {
+        margin-right: 15px;
+        padding: 3px 5px;
+        border-radius: 4px;
+        background-color: var(--sky-color);
+    }
+    .header-logo-div img {
+        width: 55px;
+    }
+    /*====================== Home Banner css start ======================*/
+    .user-details-div .mt-space {
+        margin-top: 0px;
+    }
+    .user-details-div {
+        min-height: auto;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .banner-logo-div {
+        text-align: center;
+    }
+    .banner-logo-div img {
+        max-width: 120px;
+        margin-bottom: 5px;
+    }
+    .app-contains h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .app-contains h3 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .home-img-div {
+        margin-top: 30px;
+    }
+    .user-details-div:before {
+        animation: unset;
+        display: none;
+    }
+    .avalable-now-div {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .avalable-now-div img {
+        margin-bottom: 10px;
+    }
+    .home-img-div:before {
+        width: 100%;
+    }
+    .home-img-div img {
+        max-width: 260px;
+    }
+    /*====================== Home Banner css end ======================*/
+
+    /*====================== Phone Screen Short css start ======================*/
+    .phone-ss-div:before {
+        display: none;
+    }
+    .phone-ss-div {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .mob-frame-device {
+        display: none;
+    }
+    .phone-ss-slider .slick-slide {
+        filter: grayscale(0) !important;
+    }
+    .slick-slider {
+        margin-bottom: 0px !important;
+    }
+    /*====================== Phone Screen Short css end ======================*/
+
+    /*====================== About us css start ======================*/
+    .about-right-side {
+        border-radius: 20px;
+        height: auto;
+        width: 100%;
+        padding-top: 20px;
+        margin-top: 35px;
+    }
+    .about-style {
+        margin-bottom: 10px;
+    }
+    .phone-img img {
+        max-width: 200px;
+    }
+    .half-circle-main-div {
+        display: none;
+    }
+    /*====================== About us css end ======================*/
+
+    /*====================== Feature css start ======================*/
+    .features-phone-img {
+        text-align: center;
+    }
+    .features-phone-img img {
+        max-width: 200px;
+    }
+    /*====================== Feature css end ======================*/
+
+    /*====================== Contact us css start ======================*/
+    .contact-img-div {
+        margin-top: 50px;
+    }
+    .contact-img-div img {
+        max-width: 200px;
+    }
+    /*====================== Contact us css end ======================*/
+
+    /*====================== Footer css end ======================*/
+    footer:before {
+        display: none;
+    }
+    .footer-menu,
+    .footer-copyright {
+        text-align: center !important;
+    }
+    footer {
+        padding-top: 50px;
+    }
+    /*====================== Footer css start ======================*/
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 750px !important;
+    }
+    .navbar-toggler {
+    	background-color: var(--white);
+    }
+    .navbar-toggler .navbar-toggler-icon {
+    	display: flex;
+	    align-items: center;
+	    justify-content: center;
+    }
+    .navbar-collapse.show {
+    	background-color: var(--primary-color);
+    }
+    nav .navbar-nav .nav-item {
+        margin-left: 0px;
+    }
+    .small-circle {
+    	display: none;
+    }
+    .big-circle {
+    	display: none;
+    }
+    .common-padding-div {
+    	padding-top: 60px;
+    	padding-bottom: 60px;
+    }
+    .common-heading-text {
+    	font-size: 36px;
+    }
+    .small-text {
+    	font-size: 16px;
+    }
+    .common-para {
+    	font-size: 15px;
+    }
+    nav .navbar-nav .nav-item {
+        margin-left: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top: 1px solid rgb(238 163 80 / 24%);
+    }
+    nav .navbar-nav .nav-item .nav-link {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .navbar-nav {
+        background-color: #162e44;
+    }
+    .header-main-div .navbar-toggler {
+        padding: 3px 5px;
+        border-radius: 4px;
+        background-color: var(--sky-color);
+    }
+    .header-logo-div img {
+        width: 55px;
+    }
+    .banner-logo-div img {
+        max-width: 150px;
+    }
+    /*====================== Home Banner css start ======================*/
+    .user-details-div {
+        height: auto;
+    }
+    .app-contains h2 {
+        font-size: 50px;
+    }
+    .app-contains h3 {
+        font-size: 48px;
+    }
+    .home-img-div img {
+        max-width: 90%;
+    }
+    .connects-div h3 {
+        font-size: 54px;
+    }
+    /*====================== Home Banner css end ======================*/
+
+    /*====================== About Us css start ======================*/
+    .about-right-side {
+    	height: 100%;
+	    width: 100%;
+	    border-radius: 10px;
+	    padding-top: 25px;
+    }
+    .about-style h4 {
+    	font-size: 15px;
+    }
+    .about-style-circle {
+	    padding: 5px;
+	    width: 40px;
+	    height: 40px;
+	    margin-right: 7px;
+	}
+    .half-circle-main-div {
+        display: none;
+    }
+    /*====================== About Us css end ======================*/
+
+    /*====================== Feature css start ======================*/
+    .feature-title h4 {
+    	font-size: 18px;
+    }
+    .features-phone-img img {
+	    max-width: 280px;
+	}
+    /*====================== Feature css end ======================*/
+
+    /*====================== Phone Screen Short css start ======================*/
+    .mob-frame-device {
+	    width: 253px;
+	}
+	.phone-ss-div:before {
+		height: 700px;
+    	width: 700px;
+	}
+    /*====================== Phone Screen Short css end ======================*/
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px !important;
+    }
+    .common-padding-div {
+    	padding-top: 70px;
+    	padding-bottom: 70px;
+    }
+    .big-circle {
+	    bottom: 2%;
+	    max-width: 70px;
+	}
+	.small-circle {
+	    bottom: 18%;
+	    right: 5%;
+	    max-width: 60px;
+	}
+	.common-heading-text {
+		font-size: 40px;
+	}
+	.small-text {
+		font-size: 18px;
+	}
+    .banner-logo-div img {
+        max-width: 150px;
+    }
+    .header-logo-div img {
+        width: 55px;
+    }
+    /*====================== Navbar css start ======================*/
+    nav .navbar-nav .nav-item .nav-link {
+    	font-size: 14px;
+    }
+    /*====================== Navbar css end ======================*/
+
+    /*====================== Home Banner css start ======================*/
+    .user-details-div {
+        height: auto;
+    }
+    .app-contains h2 {
+        font-size: 50px;
+    }
+    .app-contains h3 {
+        font-size: 48px;
+    }
+    .home-img-div img {
+        max-width: 70%;
+    }
+    .connects-div h3 {
+        font-size: 54px;
+    }
+    /*====================== Home Banner css end ======================*/
+
+    /*====================== About css start ======================*/
+    .phone-img img {
+	    max-width: 210px;
+	}
+	.about-right-side {
+		height: 500px;
+    	width: 500px;
+	}
+	.about-style h4 {
+		font-size: 18px;
+	}
+    .half-circle-main-div {
+        display: none;
+    }
+    .big-b-dots {
+        width: 90px;
+        height: 90px;
+    }
+    .big-s-dots {
+        width: 40px;
+        height: 40px;
+    }
+    .small-b-dots {
+        width: 45px;
+        height: 45px;
+    }
+    /*====================== About css end ======================*/
+
+    /*====================== Features css start ======================*/
+    .features-phone-img img {
+	    max-width: 85%;
+	}
+	.feature-title h4 {
+		font-size: 19px;
+	}
+	.feature-div .big-circle {
+		display: none;
+	}
+    /*====================== Features css end ======================*/
+
+    /*====================== Phone Screen Short css start ======================*/
+    .mob-frame-device {
+	    width: 215px;
+	}
+	.phone-ss-div:before {
+		height: 620px;
+		width: 620px;
+	}
+	.phone-ss-div .small-circle {
+		top: 38%;
+    	left: 57%;
+	}
+    .phone-ss-div .big-circle {
+        top: 37%;
+    }
+    /*====================== Phone Screen Short css end ======================*/
+
+    /*====================== Contact Us css start ======================*/
+    .contact-img-div img {
+	    max-width: 250px;
+	}
+    /*====================== Contact Us css end ======================*/
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .container {
+        max-width: 1140px !important;
+    }
+    .big-circle {
+	    bottom: 2%;
+	    max-width: 70px;
+	}
+	.small-circle {
+	    bottom: 16%;
+	    right: 5%;
+	    max-width: 60px;
+	}
+	.common-padding-div {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.common-heading-text {
+		font-size: 44px;
+	}
+	.small-text {
+		font-size: 18px;
+	}
+    .banner-logo-div img {
+        max-width: 165px;
+    }
+    .header-logo-div img {
+        width: 60px;
+    }
+    /*====================== Navbar css start ======================*/
+    nav .navbar-nav .nav-item .nav-link {
+    	font-size: 15px;
+    }
+    /*====================== Navbar css end ======================*/
+
+    /*====================== Home Banner css start ======================*/
+    .app-contains h2 {
+        font-size: 54px;
+    }
+    .app-contains h3 {
+        font-size: 60px;
+    }
+    .home-img-div img {
+        max-width: 70%;
+    }
+    .user-details-div .mt-space {
+        margin-top: -7%;
+    }
+    .home-img-div:before {
+    	width: 100%;
+    }
+    /*====================== Home Banner css end ======================*/
+
+    /*====================== About css start ======================*/
+    .phone-img img {
+	    max-width: 280px;
+	}
+	.about-right-side {
+		height: 550px;
+    	width: 550px;
+	}
+	.about-style h4 {
+		font-size: 18px;
+	}
+    .half-circle-main-div {
+        left: -300px;
+    }
+    .big-b-dots {
+        width: 90px;
+        height: 90px;
+    }
+    .big-s-dots {
+        width: 40px;
+        height: 40px;
+    }
+    .small-b-dots {
+        width: 45px;
+        height: 45px;
+    }
+    /*====================== About css end ======================*/
+
+    /*========================= Feature css start =========================*/
+    .features-phone-img img {
+	    max-width: 72%;
+	}
+	.feature-div .big-circle {
+		display: none;
+	}
+    /*========================= Feature css end =========================*/
+
+    /*========================= Phone Screen Short css start =========================*/
+    .mob-frame-device {
+        width: 259px;
+        margin-top: -4px;
+    }
+    .phone-ss-div:before {
+    	height: 700px;
+    	width: 700px;
+    }
+    .phone-ss-div .small-circle {
+    	top: 37%;
+    }
+    .contact-img-div img {
+	    max-width: 250px;
+	}
+    .phone-ss-div .big-circle {
+        top: 35%;
+    }
+    /*========================= Phone Screen Short css end =========================*/
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1660px) {
+	.container {
+	    max-width: 1280px !important;
+	}
+	.big-circle {
+	    bottom: 2%;
+	    max-width: 70px;
+	}
+	.small-circle {
+	    bottom: 13%;
+	    right: 5%;
+	    max-width: 60px;
+	}
+	/*====================== Home Banner css start ======================*/
+    .app-contains h2 {
+        font-size: 58px;
+    }
+    .app-contains h3 {
+        font-size: 66px;
+    }
+    .home-img-div img {
+        max-width: 370px;
+    }
+    .user-details-div .mt-space {
+        margin-top: -4%;
+    }
+    .home-img-div:before {
+    	width: 100%;
+    }
+    /*====================== Home Banner css end ======================*/
+
+    /*====================== About css start ======================*/
+    .phone-img img {
+	    max-width: 280px;
+	}
+	.about-right-side {
+		height: 550px;
+    	width: 550px;
+	}
+	.about-style h4 {
+		font-size: 18px;
+	}
+    .big-b-dots {
+        width: 90px;
+        height: 90px;
+    }
+    .big-s-dots {
+        width: 40px;
+        height: 40px;
+    }
+    .small-b-dots {
+        width: 45px;
+        height: 45px;
+    }
+    /*====================== About css end ======================*/
+
+    /*========================= Feature css start =========================*/
+    .features-phone-img img {
+	    max-width: 72%;
+	}
+    /*========================= Feature css end =========================*/
+
+    /*========================= Phone Screen Short css start =========================*/
+    .mob-frame-device {
+        width: 293px;
+        margin-top: -4px;
+    }
+    .phone-ss-div:before {
+    	height: 700px;
+    	width: 700px;
+    }
+    .phone-ss-div .small-circle {
+    	top: 37%;
+    }
+    .contact-img-div img {
+	    max-width: 250px;
+	}
+    .half-circle-main-div {
+        left: -275px;
+    }
+    /*========================= Phone Screen Short css end =========================*/
+}
+
+
+
+/*====================== keyframes css start ======================*/
+.image-move {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+.image-move {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@-webkit-keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@-o-keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+@-moz-keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.pulse-effects {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgb(0 0 0 / 9%);
+    }
+    100% {
+        box-shadow: 0 0 0 60px rgba(0, 0, 0, 0);
+    }
+}
+/*====================== keyframes css end ======================*/
+
+
+
+
+
+/* comming soon page css start  */
+
+.coming-soon  {
+    background-image:url(../../image/coming-soon-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coming-soon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.6;
+}
+.coming-soon-block {
+    z-index: 9;
+    text-align: center;
+}
+.coming-soon-block h3 {
+    font-size: 55px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.coming-soon-block p {
+    font-size: 18px;
+    color: #c9c6c6;
+}
+.coming-soon-footer:before {
+    display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .coming-soon-block h3 {
+        font-size: 40px;
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .coming-soon  {
+        height: 70vh;
+    }
+    .coming-soon::before {   
+        height: 70vh;
+    }
+}
